@@ -6,6 +6,7 @@ import {
   Image,
   Button,
   DeviceEventEmitter,
+  TouchableOpacity,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -71,7 +72,7 @@ export default class MyView extends React.Component {
 
 
   naviShare() {
-
+    console.log("=========");
   }
 
   render() {
