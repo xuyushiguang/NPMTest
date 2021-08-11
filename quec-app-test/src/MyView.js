@@ -31,7 +31,7 @@ export default class MyView extends React.Component {
           style={{ height: 28, width: 28, marginLeft: 20 }}
           source={require('./images/icon_navigator_back.png')}
           onPress={() => {
-            console.log("======goBack======");
+            console.log("======goBack======", navigation);
             navigation.goBack();
           }}
         />
@@ -53,6 +53,7 @@ export default class MyView extends React.Component {
             width: 44,
           }}
           onPress={() => {
+            console.log("======naviShare======", that ? that : "aa");
             that?.naviShare();
           }
           }>
